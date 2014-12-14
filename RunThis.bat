@@ -1,0 +1,1 @@
+wsimport -keep -s src -d nbproject http://tubes3wbd.herokuapp.com/Api?wsdl
