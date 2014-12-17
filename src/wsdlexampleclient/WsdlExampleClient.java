@@ -18,10 +18,13 @@ public class WsdlExampleClient {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        Api example = new ApiImplService().getApiImplPort();
+        
+        Api api = new ApiImplService().getApiImplPort();
         // This line will send "koji, geraldi & fawwaz" to server, and server will give 
         // a response back to client with additional "Hello" Message in front of parameter sent to the server
-        System.out.println(example.sayHi("Koji, Geraldi & Fawwaz"));
+        System.out.println(api.sayHi("Koji, Geraldi & Fawwaz"));
+        
+        
     }
     
 }

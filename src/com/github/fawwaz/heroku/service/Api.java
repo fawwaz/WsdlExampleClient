@@ -25,6 +25,167 @@ public interface Api {
 
     /**
      * 
+     * @return
+     *     returns boolean
+     */
+    @WebMethod
+    @WebResult(targetNamespace = "")
+    @RequestWrapper(localName = "readPost", targetNamespace = "http://service.heroku.fawwaz.github.com/", className = "com.github.fawwaz.heroku.service.ReadPost")
+    @ResponseWrapper(localName = "readPostResponse", targetNamespace = "http://service.heroku.fawwaz.github.com/", className = "com.github.fawwaz.heroku.service.ReadPostResponse")
+    public boolean readPost();
+
+    /**
+     * 
+     * @param arg0
+     * @return
+     *     returns boolean
+     */
+    @WebMethod
+    @WebResult(targetNamespace = "")
+    @RequestWrapper(localName = "deleteUser", targetNamespace = "http://service.heroku.fawwaz.github.com/", className = "com.github.fawwaz.heroku.service.DeleteUser")
+    @ResponseWrapper(localName = "deleteUserResponse", targetNamespace = "http://service.heroku.fawwaz.github.com/", className = "com.github.fawwaz.heroku.service.DeleteUserResponse")
+    public boolean deleteUser(
+        @WebParam(name = "arg0", targetNamespace = "")
+        String arg0);
+
+    /**
+     * 
+     * @param arg3
+     * @param arg2
+     * @param arg1
+     * @param arg0
+     * @return
+     *     returns boolean
+     */
+    @WebMethod
+    @WebResult(targetNamespace = "")
+    @RequestWrapper(localName = "updatePost", targetNamespace = "http://service.heroku.fawwaz.github.com/", className = "com.github.fawwaz.heroku.service.UpdatePost")
+    @ResponseWrapper(localName = "updatePostResponse", targetNamespace = "http://service.heroku.fawwaz.github.com/", className = "com.github.fawwaz.heroku.service.UpdatePostResponse")
+    public boolean updatePost(
+        @WebParam(name = "arg0", targetNamespace = "")
+        String arg0,
+        @WebParam(name = "arg1", targetNamespace = "")
+        String arg1,
+        @WebParam(name = "arg2", targetNamespace = "")
+        String arg2,
+        @WebParam(name = "arg3", targetNamespace = "")
+        String arg3);
+
+    /**
+     * 
+     * @param arg3
+     * @param arg2
+     * @param arg1
+     * @param arg0
+     * @return
+     *     returns boolean
+     */
+    @WebMethod
+    @WebResult(targetNamespace = "")
+    @RequestWrapper(localName = "updateUser", targetNamespace = "http://service.heroku.fawwaz.github.com/", className = "com.github.fawwaz.heroku.service.UpdateUser")
+    @ResponseWrapper(localName = "updateUserResponse", targetNamespace = "http://service.heroku.fawwaz.github.com/", className = "com.github.fawwaz.heroku.service.UpdateUserResponse")
+    public boolean updateUser(
+        @WebParam(name = "arg0", targetNamespace = "")
+        String arg0,
+        @WebParam(name = "arg1", targetNamespace = "")
+        String arg1,
+        @WebParam(name = "arg2", targetNamespace = "")
+        String arg2,
+        @WebParam(name = "arg3", targetNamespace = "")
+        String arg3);
+
+    /**
+     * 
+     * @param arg0
+     * @return
+     *     returns boolean
+     */
+    @WebMethod
+    @WebResult(targetNamespace = "")
+    @RequestWrapper(localName = "readComment", targetNamespace = "http://service.heroku.fawwaz.github.com/", className = "com.github.fawwaz.heroku.service.ReadComment")
+    @ResponseWrapper(localName = "readCommentResponse", targetNamespace = "http://service.heroku.fawwaz.github.com/", className = "com.github.fawwaz.heroku.service.ReadCommentResponse")
+    public boolean readComment(
+        @WebParam(name = "arg0", targetNamespace = "")
+        Integer arg0);
+
+    /**
+     * 
+     * @param arg3
+     * @param arg2
+     * @param arg1
+     * @param arg0
+     * @return
+     *     returns boolean
+     */
+    @WebMethod
+    @WebResult(targetNamespace = "")
+    @RequestWrapper(localName = "createPost", targetNamespace = "http://service.heroku.fawwaz.github.com/", className = "com.github.fawwaz.heroku.service.CreatePost")
+    @ResponseWrapper(localName = "createPostResponse", targetNamespace = "http://service.heroku.fawwaz.github.com/", className = "com.github.fawwaz.heroku.service.CreatePostResponse")
+    public boolean createPost(
+        @WebParam(name = "arg0", targetNamespace = "")
+        String arg0,
+        @WebParam(name = "arg1", targetNamespace = "")
+        String arg1,
+        @WebParam(name = "arg2", targetNamespace = "")
+        String arg2,
+        @WebParam(name = "arg3", targetNamespace = "")
+        String arg3);
+
+    /**
+     * 
+     * @param arg0
+     * @return
+     *     returns boolean
+     */
+    @WebMethod
+    @WebResult(targetNamespace = "")
+    @RequestWrapper(localName = "deletePost", targetNamespace = "http://service.heroku.fawwaz.github.com/", className = "com.github.fawwaz.heroku.service.DeletePost")
+    @ResponseWrapper(localName = "deletePostResponse", targetNamespace = "http://service.heroku.fawwaz.github.com/", className = "com.github.fawwaz.heroku.service.DeletePostResponse")
+    public boolean deletePost(
+        @WebParam(name = "arg0", targetNamespace = "")
+        String arg0);
+
+    /**
+     * 
+     * @param arg0
+     * @return
+     *     returns boolean
+     */
+    @WebMethod
+    @WebResult(targetNamespace = "")
+    @RequestWrapper(localName = "publishPost", targetNamespace = "http://service.heroku.fawwaz.github.com/", className = "com.github.fawwaz.heroku.service.PublishPost")
+    @ResponseWrapper(localName = "publishPostResponse", targetNamespace = "http://service.heroku.fawwaz.github.com/", className = "com.github.fawwaz.heroku.service.PublishPostResponse")
+    public boolean publishPost(
+        @WebParam(name = "arg0", targetNamespace = "")
+        String arg0);
+
+    /**
+     * 
+     * @return
+     *     returns boolean
+     */
+    @WebMethod
+    @WebResult(targetNamespace = "")
+    @RequestWrapper(localName = "readUser", targetNamespace = "http://service.heroku.fawwaz.github.com/", className = "com.github.fawwaz.heroku.service.ReadUser")
+    @ResponseWrapper(localName = "readUserResponse", targetNamespace = "http://service.heroku.fawwaz.github.com/", className = "com.github.fawwaz.heroku.service.ReadUserResponse")
+    public boolean readUser();
+
+    /**
+     * 
+     * @param arg0
+     * @return
+     *     returns boolean
+     */
+    @WebMethod
+    @WebResult(targetNamespace = "")
+    @RequestWrapper(localName = "searchPost", targetNamespace = "http://service.heroku.fawwaz.github.com/", className = "com.github.fawwaz.heroku.service.SearchPost")
+    @ResponseWrapper(localName = "searchPostResponse", targetNamespace = "http://service.heroku.fawwaz.github.com/", className = "com.github.fawwaz.heroku.service.SearchPostResponse")
+    public boolean searchPost(
+        @WebParam(name = "arg0", targetNamespace = "")
+        String arg0);
+
+    /**
+     * 
      * @param arg0
      * @return
      *     returns java.lang.String
@@ -36,5 +197,68 @@ public interface Api {
     public String sayHi(
         @WebParam(name = "arg0", targetNamespace = "")
         String arg0);
+
+    /**
+     * 
+     * @param arg3
+     * @param arg2
+     * @param arg1
+     * @param arg0
+     * @return
+     *     returns boolean
+     * @throws InterruptedException_Exception
+     */
+    @WebMethod
+    @WebResult(targetNamespace = "")
+    @RequestWrapper(localName = "createUser", targetNamespace = "http://service.heroku.fawwaz.github.com/", className = "com.github.fawwaz.heroku.service.CreateUser")
+    @ResponseWrapper(localName = "createUserResponse", targetNamespace = "http://service.heroku.fawwaz.github.com/", className = "com.github.fawwaz.heroku.service.CreateUserResponse")
+    public boolean createUser(
+        @WebParam(name = "arg0", targetNamespace = "")
+        String arg0,
+        @WebParam(name = "arg1", targetNamespace = "")
+        String arg1,
+        @WebParam(name = "arg2", targetNamespace = "")
+        String arg2,
+        @WebParam(name = "arg3", targetNamespace = "")
+        String arg3)
+        throws InterruptedException_Exception
+    ;
+
+    /**
+     * 
+     * @param arg3
+     * @param arg2
+     * @param arg1
+     * @param arg0
+     * @return
+     *     returns boolean
+     */
+    @WebMethod
+    @WebResult(targetNamespace = "")
+    @RequestWrapper(localName = "createComment", targetNamespace = "http://service.heroku.fawwaz.github.com/", className = "com.github.fawwaz.heroku.service.CreateComment")
+    @ResponseWrapper(localName = "createCommentResponse", targetNamespace = "http://service.heroku.fawwaz.github.com/", className = "com.github.fawwaz.heroku.service.CreateCommentResponse")
+    public boolean createComment(
+        @WebParam(name = "arg0", targetNamespace = "")
+        String arg0,
+        @WebParam(name = "arg1", targetNamespace = "")
+        String arg1,
+        @WebParam(name = "arg2", targetNamespace = "")
+        String arg2,
+        @WebParam(name = "arg3", targetNamespace = "")
+        String arg3);
+
+    /**
+     * 
+     * @param arg0
+     * @return
+     *     returns boolean
+     */
+    @WebMethod
+    @WebResult(targetNamespace = "")
+    @RequestWrapper(localName = "deleteComment", targetNamespace = "http://service.heroku.fawwaz.github.com/", className = "com.github.fawwaz.heroku.service.DeleteComment")
+    @ResponseWrapper(localName = "deleteCommentResponse", targetNamespace = "http://service.heroku.fawwaz.github.com/", className = "com.github.fawwaz.heroku.service.DeleteCommentResponse")
+    public boolean deleteComment(
+        @WebParam(name = "arg0", targetNamespace = "")
+        Integer arg0);
 
 }
